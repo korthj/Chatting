@@ -1,0 +1,251 @@
+.ChatRoom{
+    height: 100%;
+
+    .ChatRoom_Header{
+        height: 15%;
+        display: table;
+        .Close_Icon{
+            width: 10%;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+
+            .Close_Icon_Button{
+                background-color: white;
+                border: none;
+                outline: none;
+                padding: 0 2px 0 10px;
+            }
+        }
+
+        .NameTag{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+
+            .Name{
+                margin-top: 31px;
+                vertical-align: middle;
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+            }
+            .Position{
+                vertical-align: middle;
+                width: 100%;
+                text-align: center;
+                font-size: 10px;        
+                color: rgb(108, 107, 108);
+            }
+        }
+    }
+
+    .ChatRoom_Neck{
+        font-size: 12px;
+        font-weight: 500;
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgb(153, 152, 153);
+        font-size: 12px;
+        margin: 8px 0px;   
+    }
+    .ChatRoom_Neck::before{
+        content: "";
+        flex-grow: 1;
+        background: rgb(228, 228, 228);
+        height: 0.8px;
+        font-size: 0px;
+        line-height: 0px;
+        margin-right:15px;
+    }
+    .ChatRoom_Neck::after{
+        content: "";
+        flex-grow: 1;
+        background: rgb(228, 228, 228);
+        height: 0.8px;
+        font-size: 0px;
+        line-height: 0px;
+        margin-left: 15px;
+    }
+
+    .ChatRoom_Body{
+        height: 480px;
+
+        .Message_List{
+            height: 100%;
+            overflow: auto;
+
+            .Chatting .Time{
+                align-self: flex-end;
+                flex-basis: 3.75rem;
+                flex-shrink: 0;
+                margin-left: 0.3125rem;
+                margin-right: 0.3125rem;
+                font-size: 0.75rem;
+                color: rgb(88, 88, 88);
+                text-align: center;
+            }
+
+            .Chat_Receive_Child, .Chat_Send_Child{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+                        
+            .Chat_Receive_Child, .Chat_Send_Child{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .Chat_Receive{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: stretch;
+                margin-top: 0.3125rem;
+                margin-bottom: 0.3125rem;
+                margin-left: 10px;
+            }
+            .Chat_Receive > .profile-img{
+                align-self: flex-start;
+            }
+            .Chat_Receive_Child > .Chat_Balloon{
+                margin-top: 0.3125rem;
+                padding: 0.4375rem;
+                border: 1px solid rgb(228, 233, 230);
+                border-radius: 0.1875rem;
+                background-color: rgb(228, 233, 230);
+                font-size: 0.8125rem;
+                color: black;
+            }
+            .Chat_Receive_Child > .Chat_Balloon::before{
+                content: "";
+                border-bottom: 0.6875rem solid transparent;
+                border-right: 0.6875rem solid rgb(228, 233, 230);
+                position: absolute;
+                top: 1.563rem;
+                left: -0.5rem;
+            }
+            .Chat_Receive_Child > .Chat_Balloon_Friend{
+                margin-top: 0.3125rem;
+                padding: 0.4375rem;
+                border: 1px solid rgb(228, 233, 230);
+                border-radius: 0.1875rem;
+                background-color: rgb(228, 233, 230);
+                font-size: 0.8125rem;
+                color: black;
+            }
+            .Chat_Receive_Child > .Chat_Balloon_Friend::before{
+                content: "";
+                border-bottom: 0.6875rem solid transparent;
+                border-right: 0.6875rem solid rgb(228, 233, 230);
+                position: absolute;
+                top: 1.563rem;
+                left: -0.5rem;
+            }
+
+            .Chat_Send{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-right: 0.625rem;
+                margin-top: 0.3125rem;
+                margin-bottom: 0.3125rem;
+            }
+            .Chat_Send_Child > .Chat_Balloon{
+                margin-top: 0.3125rem;
+                padding: 0.4375rem;
+                border: 1px solid rgb(82, 96, 246);
+                border-radius: 0.1875rem;
+                background-color: rgb(82, 96, 246);
+                font-size: 0.8125rem;
+                color: white;
+            }
+            .Chat_Send_Child > .Chat_Balloon::before{
+                content: "";
+                border-bottom: 0.6875rem solid transparent;
+                border-left: 0.6875rem solid rgb(82, 96, 246);
+                position: absolute;
+                top: 0.625rem;
+                right: -0.5rem;
+            }
+
+            .Chat_Send_Child > .Chat_Balloon_Friend{
+                margin-top: 0.3125rem;
+                padding: 0.4375rem;
+                border: 1px solid rgb(244, 244, 244);
+                border-radius: 0.1875rem;
+                background-color: rgb(244, 244, 244);
+                font-size: 0.8125rem;
+                color: white;
+            }
+            .Chat_Send_Child > .Chat_Balloon_Friend::before{
+                content: "";
+                border-bottom: 0.6875rem solid transparent;
+                border-left: 0.6875rem solid rgb(244, 244, 244);
+                position: absolute;
+                top: 0.625rem;
+                right: -0.5rem;
+            }
+
+            .Chatting .Time{
+                align-self: flex-end;
+                flex-basis: 3.75rem;
+                flex-shrink: 0;
+                margin-left: 0.3125rem;
+                margin-right: 0.3125rem;
+                font-size: 0.75rem;
+                color: rgb(88, 88, 88);
+                text-align: center;
+            }
+            .Chat_Receive > .Time{
+                margin-right: 2.5rem;
+            }
+            .Chat_Send > .Time{
+                margin-left: 2.5rem;
+            }
+        }
+
+        .Message_List::-webkit-scrollbar {
+            display: none;
+        }
+
+        .Message_Box{
+            height: 40px;
+            border-top: 1px solid #c6cbd6;
+
+            .Message_Box_Form{
+                height: 100%;
+
+                .Form_Child{
+                    width: 100%;
+                    height: 100%;
+
+                    .Form_Input{
+                        width: 85%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        padding-left: 13px;
+                    }
+
+                    .Form_Button{
+                        width: 15%;
+                        height: 100%;
+                        background-color: white;
+                        border: none;
+                        outline: none;
+                        vertical-align: middle;
+
+                        svg{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

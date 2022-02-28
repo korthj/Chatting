@@ -1,0 +1,20 @@
+{
+  "name": "rocketpunchtest",
+  "description": "사전 과제 테스트",
+  "version": "1.0",
+  "author": "김형진",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"node ./server/index.tsx\" \"cd client && yarn start\"",
+    "start": "node ./server/index.js",
+    "build": "webpack --progress --mode production"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
+  }
+}

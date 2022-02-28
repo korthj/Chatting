@@ -1,0 +1,151 @@
+.ChatList{
+    height: 92%;
+
+    .Chat_List_Header{
+        width: 100%;
+        height: 9%;
+        display: table;
+
+        .Message{
+            width: 100%;
+            height: 50%;
+            vertical-align: middle;
+    
+            .Name{
+                margin-top: 31px;
+                vertical-align: middle;
+                width: 100%;
+                text-align: end;
+                font-weight: bold;
+    
+                .New_Message{
+                    margin-left: 100px;
+                    margin-right: 20px;
+                    text-decoration-line: none;
+                    color: rgb(100, 112, 247);
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .Chat_List_Body{
+        height: 91%;
+        overflow: auto;
+        
+        .Chat_List_Rooms{
+            height: 100%;
+
+            .Chat_Rooms{
+                display: flex;
+                padding-left: 1.5rem;
+                flex-direction: column;
+                list-style: none;
+
+                li{
+                    flex-basis:5rem; 
+                    flex-shrink: 0;
+                    margin: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    a{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: end;
+                        align-items: center;
+                        text-decoration-line: none;
+                        color: black;
+                    }
+                    .Profile_Img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 5px;
+
+                        svg{
+                            width: 50px;
+                            height: 50px;
+                            color: rgb(189, 189, 189);
+                        }
+                    }
+
+                    .Chat_List_Room_Child{
+                        width: 83%;
+                        display: flex;
+                        border-bottom: 1.5px solid rgb(229, 228, 229);
+                        margin-left: 3%;
+
+                        .Talk{
+                            width: 210px;
+
+                            *{
+                                margin-top: 5px ; 
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                        .Friend_Name{
+                            font-weight: bold;
+                            font-size: 14px; 
+                            margin-bottom: 1px;
+                            margin-top: 10px;
+                        }
+
+                        .Friend_Position{
+                            font-weight: 400;
+                            font-size: 12px;
+                            margin-top: 0px;
+                            color: rgb(102, 101, 102);
+                        }
+                        
+                        .Chat_Text{
+                            color: black;
+                            font-size: 12px; 
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            height: 12px;
+                        }
+                        .Chat_Status{
+                            flex-basis: 72px; 
+                            text-align: right;
+
+                            .Time{
+                                margin-top: 5px ; 
+                                margin-bottom: 5px;  
+                                display: block;
+                                color: rgb(194, 194, 194);
+                                font-size: 0.625rem; 
+                            }
+                            .Chat_Unread_Balloon{ 
+                                display:inline-block;
+                                border: 1px solid rgb(240, 126, 136);
+                                background-color: rgb(240, 126, 136);
+                                border-radius: 0.625rem;
+                                font-size: 0.3125rem;
+                                color: white;
+                                font-weight: bold;
+                                padding-top: 1px; 
+                                padding-bottom: 1px;
+                                padding-left: 4px; 
+                                padding-right: 4px;
+                            }
+                        }
+                        
+                    }
+                    
+                    .Empty_Chat{
+                        margin-left: 7.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .Chat_List_Body::-webkit-scrollbar {
+        display: none;
+    }
+}

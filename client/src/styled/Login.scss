@@ -1,0 +1,85 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .Login {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(0, 30, 60);
+
+    .heading {
+      color: white;
+      font-size: 2.5em;
+      padding-bottom: 10px;
+    }
+    
+    .Login_Child {
+      width: 200px;
+      margin-top: 15%;
+    }
+
+    .Login_Input {
+      border-radius: 0;
+      padding: 15px 20px;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+
+    .Password_Input{
+      border-radius: 0;
+      padding: 15px 20px;
+      width: 100%;
+      margin-top: 20px;
+      border: none;
+      outline: none;
+    }
+
+    .Button {
+       
+        width: 100%;
+        margin-top: 20px;
+        
+        .Login_Button{
+          color: #fff !important;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: #2979FF;
+          padding: 20px;
+          border-radius: 5px;
+          display: inline-block;
+          border: none;
+          width: 49%;
+          margin-left: 1%;
+          height: 50px;
+          font-weight: bold;
+        }
+
+        .Sign_UP{
+          color: #fff !important;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: red;
+          padding: 20px;
+          border-radius: 5px;
+          display: inline-block;
+          border: none;
+          width: 49%;
+          height: 50px;
+          font-weight: bold;
+        }
+    }
+  }
+  
