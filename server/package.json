@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "concurrently \"node ./server/index.tsx\" \"cd client && yarn start\"",
-    "start": "node ./server/index.js",
+    "start": "node ./index.js",
     "build": "webpack --progress --mode production"
   },
   "dependencies": {
