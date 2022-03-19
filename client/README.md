@@ -1,4 +1,4 @@
-yarn install -> yarn start와 cd clinet -> yarn start로 작동 가능합니다. package.json을 세팅을 해놨어야 하는데, 보내기 직전에 알아서 번거롭게 해드리네요..
+yarn install -> yarn start와 cd clinet -> yarn start로 작동 가능합니다. 
 
 현재 구현 된 유스케이스
 1.각각의 탭을 켠다음(현재 클라이언트 메모리에 캐싱하는 방식으로 구현되어 새로 접속하면 메시지 리스트가 유지가 되지 않습니다.(유저는 서버 캐싱되어 유지됩니다))
